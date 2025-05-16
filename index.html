@@ -35,12 +35,20 @@
             <a class="nav-link" href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a
+              class="nav-link text-secondary"
+              href="#"
+              aria-disabled="true"
+              style="cursor: not-allowed"
+              disabled
+              >Disabled</a
+            >
           </li>
         </ul>
       </div>
-      <div class="d-flex justify-content-end me-5">
-        <button class="btn btn-secondary">Sign In</button>
+      <div class="d-flex justify-content-end me-5 gap-2">
+        <input type="text" placeholder="  Search" class="rounded-2" />
+        <button class="btn btn-secondary">Search</button>
       </div>
     </nav>
 
@@ -149,6 +157,7 @@
 
     <!-- Cards -->
     <div class="d-flex justify-content-center mt-3 gap-5 flex-wrap">
+      <!-- Card 1 -->
       <div class="card" style="width: 18rem">
         <img class="card-img-top" src="images/yamahar1.jpg" alt="Yamaha R1" />
         <div class="card-body">
@@ -157,7 +166,7 @@
             The Yamaha R1 is a powerful, race-bred superbike with cutting-edge
             technology.
           </p>
-          <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group" role="group">
               <button
                 class="btn btn-outline-success"
@@ -168,9 +177,14 @@
               </button>
               <button class="btn btn-outline-success">Edit</button>
             </div>
+            <p class="badge bg-secondary rounded-pill my-auto ms-auto p-2">
+              Yamaha
+            </p>
           </div>
         </div>
       </div>
+
+      <!-- Card 2 -->
       <div class="card" style="width: 18rem">
         <img class="card-img-top" src="images/s1k.jpg" alt="BMW S1k" />
         <div class="card-body">
@@ -179,7 +193,7 @@
             BMW S1000RR is a superbike blending speed, precision, and advanced
             technology.
           </p>
-          <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group" role="group">
               <button
                 class="btn btn-outline-success"
@@ -190,9 +204,12 @@
               </button>
               <button class="btn btn-outline-success">Edit</button>
             </div>
+            <p class="badge bg-secondary rounded-pill my-auto ms-auto p-2">BMW</p>
           </div>
         </div>
       </div>
+
+      <!-- Card 3 -->
       <div class="card" style="width: 18rem">
         <img class="card-img-top" src="images/fireblade.jpg" alt="Fireblade" />
         <div class="card-body">
@@ -201,7 +218,7 @@
             Honda CBR1000RR-R Fireblade delivers track-focused performance with
             refined power.
           </p>
-          <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group" role="group">
               <button
                 class="btn btn-outline-success"
@@ -212,6 +229,7 @@
               </button>
               <button class="btn btn-outline-success">Edit</button>
             </div>
+            <p class="badge bg-secondary rounded-pill my-auto ms-auto p-2">Honda</p>
           </div>
         </div>
       </div>
@@ -219,7 +237,7 @@
 
     <!-- Modal -->
     <div class="modal fade" tabindex="-1" id="momoModal">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title">Moto Madness</h5>
@@ -327,8 +345,17 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+            <hr/>
+            <div class="d-flex justify-content-between">
+
+              <div class="d-flex flex-row align-items-center">
+                <p class="mb-0">@ 2017-2018 company, inc. ·</p>
+                <a class="text-primary ms-2 text-decoration-none" href="#">Privacy ·</a>
+                <a class="cursor-pointer text-primary pl-2 text-decoration-none" href="#"> Terms</a>
+              </div>
+              <a class="text-primary cursor-pointer text-decoration-none" href="#">Back to Top</a>
+            </div>
+
       </div>
     </div>
   </body>
